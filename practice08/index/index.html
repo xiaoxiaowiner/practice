@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/index1.css">
+</head>
+<body>
+<div id="outter">
+    <div id="inner">
+        <div><a href="#">特等奖：夏暖国</a></div>
+        <div><a href="#">一等奖：夏暖国</a></div>
+        <div><a href="#">二等奖：夏暖国</a></div>
+        <div><a href="#">三等奖：夏暖国</a></div>
+        <div><a href="#">四等奖：夏暖国</a></div>
+    </div>
+</div>
+<div id="outter2">
+    <div id="inner2">
+        <div><a href="#">特等奖：夏暖国</a></div>
+        <div><a href="#">一等奖：夏暖国</a></div>
+        <div><a href="#">二等奖：夏暖国</a></div>
+        <div><a href="#">三等奖：夏暖国</a></div>
+        <div><a href="#">四等奖：夏暖国</a></div>
+    </div>
+</div>
+<div id="outter3">
+    <div id="inner3">
+        <div><a href="#">特等奖：夏暖国</a></div>
+        <div><a href="#">一等奖：夏暖国</a></div>
+        <div><a href="#">二等奖：夏暖国</a></div>
+        <div><a href="#">三等奖：夏暖国</a></div>
+        <div><a href="#">四等奖：夏暖国</a></div>
+    </div>
+</div>
+<script>
+    //广告一
+    var outter=document.getElementById("outter");
+    var inner=document.getElementById("inner");
+    var dis=outter.scrollWidth-outter.clientWidth;
+    var timer=null;
+    var timeout=null;
+    inner.innerHTML=inner.innerHTML+inner.innerHTML;
+    timer=setInterval(fn,10);
+    outter.onmouseover = function(){
+        clearInterval(timer);
+    }
+    outter.onmouseout = function(){
+        timer=setInterval(fn,10);
+    }
+    function fn(){
+        outter.scrollLeft+=1;
+        if(outter.scrollLeft==dis){
+            outter.scrollLeft=0;
+        }
+    }
+    //广告二
+    var outter2=document.getElementById("outter2");
+    var inner2=document.getElementById("inner2");
+    var dis2=outter2.scrollHeight-outter2.clientHeight;
+    var timer2=null;
+    var timeout2=null;
+    inner2.innerHTML=inner2.innerHTML+inner2.innerHTML;
+    timer2=setInterval(fn2,20);
+    outter2.onmouseover = function(){
+        clearInterval(timer2);
+        clearTimeout(timeout2);
+    }
+    outter2.onmouseout = function(){
+        timer2=setInterval(fn2,20);
+    };
+    function fn2(){
+        outter2.scrollTop+=1;
+        if(outter2.scrollTop%40==0){
+            clearInterval(timer2);
+            //clearTimeout(timeout);
+
+            timeout2=setTimeout(function(){
+                timer2=setInterval(fn2,20);
+            },2000)
+        }
+        if(outter2.scrollTop==dis2){
+            outter2.scrollTop=0;
+        }
+    }
+    //广告三
+    var outter3=document.getElementById("outter3");
+    var inner3=document.getElementById("inner3");
+    var dis3=outter3.scrollHeight-outter3.clientHeight;
+    var timer3=null;
+    var timeout3=null;
+    inner3.innerHTML=inner3.innerHTML+inner.innerHTML;
+    timer3=setInterval(fn3,20);
+    outter3.onmouseover = function(){
+        clearInterval(timer3);
+    }
+    outter3.onmouseout = function(){
+        timer3=setInterval(fn3,20);
+    };
+    function fn3(){
+        outter3.scrollTop+=1;
+        if(outter3.scrollTop==dis3){
+            outter3.scrollTop=0;
+        }
+    }
+</script>
+</body>
+</html>
