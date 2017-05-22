@@ -14,15 +14,8 @@ a{
 }
 /*头部css-star*/
 /*@media screen and (max-width: 1000px) {
-    .header {
-        width:1200px;
-    }
-    .footer{
-        width:1200px;
-    }
-    .content-img{
-        width:1200px;
-    }
+
+
 }*/
 
 .header{
@@ -32,13 +25,14 @@ a{
     line-height: 60px;
 }
 .header .login{
-    width:1200px;
+    /*width:1200px;*/
     height:60px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     overflow: hidden;
 }
 .header .login>ul{
     float:right;
+    padding-right:20px;
 }
 .header .login>ul li{
     float:left;
@@ -47,10 +41,10 @@ a{
 .header .login .login-first-l{
     padding-left: 20px;
     float:left;
-    padding-right: 345px;
+    /*padding-right: 345px;*/
 }
 .header .login>ul li select{
-    width:200px;
+    /*width:200px;*/
     height:40px;
     color:#fff;
     background: #595e64;

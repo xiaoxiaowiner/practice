@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width:100%;
+    height:100%;
+    background: #f2f2f2;
+}
+.row .row-bg{
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background: #fff;
+}
+.row .fa-reorder{
+    float:left;
+    padding-left: 15px;
+    padding-right:35px;
+}
+.row .fa-shopping-bag,.row .fa-heart-o{
+    float:right;
+    padding-left:15px;
+}
+.fa-shopping-bag{
+    padding-right: 10px;
+}
+.row .row-bg>a i{
+    color:black;
+}
+.row i{
+    padding-top: 20px;
+}
+.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.goods{
+    border-bottom:1px solid #e8e8e8;
+}
+.goods-img{
+    padding:20px 25px 20px 25px;
+}
+.goods .content-img{
+    float:left;
+}
+.goods .content-img img{
+    width:92px;
+}
+.goods .content-intro{
+    float:right;
+    /*padding-right: 20px;*/
+}
+.content-intro-span1 a{
+    padding-right:80px;
+    font-size: 16px;
+}
+.content-intro-span2{
+    font-size: 12px;
+    color:#cacaca;
+}
+/*
+.goods-img{
+    padding-left: 0;
+    padding-right: 0;
+}*/
+.items-btn{
+    text-align: center;
+    padding:20px 12px;
+}
+.items-btn a{
+    color:#9f9f9f;
+}
+.clear{
+    width:100%;
+    height:50px;
+    line-height: 40px;
+    border-radius: 25px;
+    background: #e8e8e8;
+}
+.add{
+    width:100%;
+    height:50px;
+    line-height: 40px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    background: #fff;
+}

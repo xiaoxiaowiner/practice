@@ -1,0 +1,70 @@
+*{
+    padding:0;
+    margin:0;
+}
+html{
+    width:100%;
+    height:100%;
+}
+body{
+    width:100%;
+    min-height:100%;
+    background: url(../images/img10/10.png);
+    background-size: cover;
+}
+.row .row-bg{
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+.row .fa-reorder{
+    float:left;
+    padding-right:20px;
+}
+.row .fa-shopping-bag,.row .fa-heart-o{
+    float:right;
+    padding-left:20px;
+}
+.row .row-bg>a i{
+    color:#434343;
+}
+.row i{
+    padding-top: 20px;
+}
+/*内容*/
+.new-model{
+    width:80%;
+    margin:0 auto;
+    text-align: center;
+    color:#e5d3c2;
+}
+.new-model>h1{
+    padding-top: 10%;
+    padding-bottom: 50%;
+}
+
+.model-img img{
+    width:15%;
+    padding-left:6px;
+}
+.pro-mo{
+    margin:20px 0;
+    overflow: hidden;
+}
+.footer p{
+    margin:0;
+}
+.footer{
+    padding:10px 0 20px 0;
+}
+.footer a i{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
