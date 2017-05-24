@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义复选框</title>
+    <link rel="stylesheet" href="css/index2.css">
+</head>
+<body>
+    <!--第一个-->
+    <div class="box">
+        <label class="off radio1 pointer">
+            <input name="off" type="radio" value="" />
+            Radio is off
+        </label>
+        <label class="off1 radio1 pointer">
+            <input name="off" type="radio" value="" />
+            Radio is on
+        </label>
+        <label class="off2 radio1 allowed">
+            <input name="off" type="radio" disabled="disabled" value="" />
+            Disable radio is off
+        </label>
+        <label class="on2 radio1 allowed">
+            <input name="on" type="radio" disabled="disabled" value="" />
+            Disable radio is on
+        </label>
+    </div>
+    <!--第二个-->
+    <div class="box">
+        <div class="no">NO</div>
+    </div>
+    <!--第三个-->
+    <div class="box">
+        <label id="checkbox">
+            <input type="checkbox" id="check1" />
+        </label>
+    </div>
+    <script src="jquery-3.2.0.min.js"></script>
+    <script>
+        $(function(){
+            //第一个
+            addClass(".off");
+            addClass(".off1");
+            //第二个
+            var off = true;
+            $(".no").click(function(){
+                if(off === true){
+                    $(".no").addClass("active");
+                    $(".no").html("OFF");
+                    off = false;
+                }else{
+                    $(".no").removeClass("active");
+                    $(".no").html("NO");
+                    off = true;
+                }
+            })
+            //第三个
+            var check = true;
+            $("#checkbox").click(function(){
+                if(check === true){
+                    $("#checkbox").html("✔");
+                    check = false;
+                }else{
+                    $("#checkbox").html("");
+                    check = true;
+                }
+            })
+        })
+        function addClass(id1){
+            $(id1).click(function(){
+                $(id1).addClass("on").siblings().removeClass("on");
+            })
+        }
+    </script>
+</body>
+</html>

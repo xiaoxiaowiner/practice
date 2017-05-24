@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>折叠组件</title>
+    <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="nav-z"><i class="fa1 fa fa-caret-right"></i><a href="#">早餐</a></li>
+            <ul class="zaocan ul-two">
+                <li class="y-zhou"><i class="fa fa-caret-right"></i><a href="#">营养粥</a></li>
+                <ul class="zhou ul-two ul-treen">
+                    <li><a href="#">小米粥</a></li>
+                    <li><a href="#">南瓜粥</a></li>
+                    <li><a href="#">红豆粥</a></li>
+                </ul>
+                <li class="b-bao"><i class="fa fa-caret-right"></i><a href="#">包子</a></li>
+                <ul class="baozi ul-two ul-treen">
+                    <li><a href="#">粉丝包</a></li>
+                    <li><a href="#">雪菜包</a></li>
+                    <li><a href="#">笋干包</a></li>
+                </ul>
+            </ul>
+            <li class="nav-z2"><i class="fa1 fa fa-caret-right"></i><a href="#">午餐</a></li>
+            <ul class="zaocan2 ul-two">
+                <li class="y-zhou2"><i class="fa fa-caret-right"></i><a href="#">面条</a></li>
+                <ul class="zhou2 ul-two ul-treen">
+                    <li><a href="#">兰州拉面</a></li>
+                    <li><a href="#">刀削面</a></li>
+                </ul>
+                <li class="b-bao2"><i class="fa fa-caret-right"></i><a href="#">盖浇饭</a></li>
+                <ul class="baozi2 ul-two ul-treen">
+                    <li><a href="#">番茄鸡蛋饭</a></li>
+                    <li><a href="#">鱼香肉丝饭</a></li>
+                    <li><a href="#">干饭</a></li>
+                    <li><a href="#">猪排饭</a></li>
+                    <li><a href="#">麻辣豆腐饭</a></li>
+                    <li><a href="#">扬州炒饭</a></li>
+                </ul>
+            </ul>
+            <li class="nav-z3"><i class="fa1 fa fa-caret-right"></i><a href="#">晚餐</a></li>
+            <ul class="zaocan3 ul-two">
+                <li class="y-zhou3"><i class="fa fa-caret-right"></i><a href="#">火锅</a></li>
+                <ul class="zhou3 ul-two ul-treen">
+                    <li><a href="#">鸳鸯锅</a></li>
+                    <li><a href="#">麻辣锅</a></li>
+                    <li><a href="#">三鲜锅</a></li>
+                </ul>
+                <li class="b-bao3"><i class="fa fa-caret-right"></i><a href="#">烤鱼</a></li>
+                <ul class="baozi3 ul-two ul-treen">
+                    <li><a href="#">烤清江鱼</a></li>
+                    <li><a href="#">烤草鱼</a></li>
+                    <li><a href="#">烤黑鱼</a></li>
+                    <li><a href="#">烤鲶鱼</a></li>
+                    <li><a href="#">烤黑鱼</a></li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+    <script src="jquery-3.2.0.min.js"></script>
+    <script>
+        $(function(){
+            add(".nav-z",".zaocan");
+            add(".y-zhou",".zhou");
+            add(".b-bao",".baozi");
+            add(".nav-z2",".zaocan2");
+            add(".y-zhou2",".zhou2");
+            add(".b-bao2",".baozi2");
+            add(".nav-z3",".zaocan3");
+            add(".y-zhou3",".zhou3");
+            add(".b-bao3",".baozi3");
+        })
+        function add(class1,class2){
+            var off = true;
+            $(class1).click(function(){
+                if(off === true){
+                    $(class2).show(300);
+                    $(this).children(".fa").css("transform","rotate(90deg)");
+                    off = false;
+                }else{
+                    $(class2).hide(300);
+                    $(this).children(".fa").css("transform","rotate(0deg)");
+                    off = true;
+                }
+            })
+        }
+    </script>
+</body>
+</html>

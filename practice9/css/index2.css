@@ -1,0 +1,77 @@
+*{
+    padding:0;
+    margin:0;
+}
+.box{
+    margin:50px 100px;
+}
+.box div{
+    margin-top: 20px;
+}
+input{
+    display:none;
+}
+.radio1{
+    display:block;
+    height:30px;
+    text-indent: 30px;
+    line-height: 30px;
+}
+.pointer{
+    cursor:pointer;
+}
+.allowed{
+    color:#ccc;
+    cursor:not-allowed;
+}
+.off{
+    background: url(../image/radio.png) no-repeat;
+    background-position: -30px -55px;
+}
+.off1{
+    background: url(../image/radio.png) no-repeat;
+    background-position: -30px -55px;
+}
+
+.on{
+    background: url(../image/radio.png) no-repeat;
+    background-position: -60px -25px;
+}
+.off2{
+    background: url(../image/radio.png) no-repeat;
+    background-position: -30px -55px;
+}
+.on2{
+    background: url(../image/radio.png) no-repeat;
+    background-position: 0 -85px;
+}
+/*第二个*/
+.no{
+    width:80px;
+    height:30px;
+    border-radius: 15px;
+    color:#30c193;
+    text-indent: 20px;
+    line-height: 30px;
+    position: relative;
+    background: url(../image/icon-on.png) no-repeat #34606d;
+    background-position:50px 0;
+    cursor:pointer;
+}
+.active{
+    background: url(../image/icon-off.png) no-repeat #ccc;
+    background-position:0 0;
+    color:#fff;
+    text-indent: 30px;
+}
+#checkbox{
+    display:block;
+    width:40px;
+    height:40px;
+    background:#20965a ;
+    font-size: 32px;
+    color:#fff;
+    text-align: center;
+    line-height: 40px;
+    cursor:pointer;
+}
